@@ -7,6 +7,7 @@ class AppState extends EventEmitter {
   /** @type {Value[]} */
   values = []
   snacks = [new Snacks("100", "doritos", 120)]
+  totalMoney = 0 //proxy.totalMoney(function)
 }
 
 export const ProxyState = new Proxy(new AppState(), {
